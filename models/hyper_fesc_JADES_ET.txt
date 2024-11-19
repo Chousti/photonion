@@ -1,0 +1,31 @@
+
+--------------- Summary of best ET model ---------------
+Train log-log MAE   0.41118
+Test log-log MAE    0.64162
+Train log-log R2    0.78189
+Test log-log R2     0.39888
+Train Spearman      0.89017
+Test Spearman       0.67736
+
+Split seed: 42
+
+Best hyperparameters:
+    estimator__regressor__n_estimators 87
+    estimator__regressor__max_depth 36
+    estimator__regressor__min_samples_split 13
+    estimator__regressor__max_features 0.933034678270449
+    estimator__regressor__min_impurity_decrease 1.4680870106692332e-08
+    estimator__regressor__ccp_alpha 3.886597523322955e-06
+    estimator__regressor__max_samples 0.7408369795929172
+
+Feature importances:
+    F115W                0.23879
+    F150W                0.18394
+    F200W                0.07147
+    F277W                0.08441
+    F335M                0.06206
+    F356W                0.09247
+    F410M                0.08150
+    F444W                0.08066
+    redshift             0.10470
+
