@@ -1,8 +1,14 @@
 # photonion
 Implicit Likelihood Inference package trained on the SPHINX simulation to infer the escaped ionising luminosity of high-z galaxies 
 
+## TODO LIST
+- [ ] add example usage for how to load a model
+- [ ] add example usage for creating a data array (use Carniani+24 galaxies) and computing $\dot{N}_{ion}$
+- [ ] add model from Choustikov+24
+- [ ] decide whether or not to add documentation about $f_{\rm esc}$ model
+- [ ] think of anything else
+
 ## Example Usage
-TODO: Include this
 
 ## Citation
 If you use this package for anything cool, a citation of the original paper should be included:
