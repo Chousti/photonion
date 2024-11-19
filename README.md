@@ -7,6 +7,7 @@ Implicit Likelihood Inference package trained on the SPHINX simulation to infer 
 - [ ] add model from Choustikov+24
 - [ ] decide whether or not to add documentation about $f_{\rm esc}$ model
 - [ ] think of anything else
+- [ ] Richard: Proof read code
 
 ## Example Usage
 
