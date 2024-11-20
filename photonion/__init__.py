@@ -14,7 +14,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from .io import SPHINXData                                                      # noqa
+from .io import SPHINXData, get_MABs, get_AB, convert_observational_data        # noqa
 from .model import (make_pipeline, KL_loss_fraction,                            # noqa
                     MAE_log_log, RMSE_log_log, logit_transform,                 # noqa
                     inverse_logit_transform, fit_logit_transform,               # noqa
