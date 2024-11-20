@@ -10,6 +10,24 @@ Implicit Likelihood Inference package trained on the SPHINX simulation to infer 
 - [ ] Richard: Proof read code
 
 ## Example Usage
+Here's an easy example of how to use the package to infer $\dot{N}_{\rm ion}$ from photometry in JADES bands:
+```python
+# Example for GN-z11 (Bunker+23, Tacchella+23):
+# Data: ["F090W", "F115W", "F150W", "F200W", "F277W", "F335M", "F356W", "F410M", "F444W", "z"]
+
+import photonion # import package
+
+SBIRegressor = photonion.SBIRegressor.from_config("../models", "SBI_JADES_nion") # load model
+GN_z11 = np.array([-2.9, 1.2, 115.9, 144.4, 121.7, 132.9, 123.5, 114.9, 133.8, 10.6]).T # get data
+
+data = photonion.convert_observational_data(data_vector) # convert data into useable features (Choustikov+24)
+Nion = SBIRegressor.sample_summarized(data, n_samples=3000) # run pipeline, sample the posterior and summarize
+print(f'GN-z11: {Nion[0][0]:.3f}+{(Nion[0][1]-Nion[0][0]):.3f}-{(Nion[0][0]-Nion[0][2]):.3f}') # print data
+```
+Which would return:
+```
+\dot{N}_{ion} Prediction for GN-z11: 53.081+0.393-0.460
+```
 
 ## Citation
 If you use this package for anything cool, a citation of the original paper should be included:
