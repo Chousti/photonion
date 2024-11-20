@@ -2,12 +2,13 @@
 Implicit Likelihood Inference package trained on the SPHINX simulation to infer the escaped ionising luminosity of high-z galaxies 
 
 ## TODO LIST
-- [ ] add example usage for how to load a model
-- [ ] add example usage for creating a data array (use Carniani+24 galaxies) and computing $\dot{N}_{ion}$
-- [ ] add model from Choustikov+24
+- [x] add example usage for how to load a model
+- [x] add example usage for creating a data array (use GN-z11) and computing $\dot{N}_{ion}$
+- [ ] add model from Choustikov+24?
 - [ ] decide whether or not to add documentation about $f_{\rm esc}$ model
 - [ ] think of anything else
-- [ ] Richard: Proof read code
+- [ ] Richard: proof read code
+- [ ] Richard: check that the data provided in /models is enough/too much, should we remove the summaries?
 
 ## Example Usage
 Here's an easy example of how to use the package to infer $\dot{N}_{\rm ion}$ from photometry in JADES bands:
