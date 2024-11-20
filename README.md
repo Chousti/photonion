@@ -1,5 +1,5 @@
 # photonion
-Implicit Likelihood Inference package trained on mock observations from the SPHINX simulation (Rosdahl+22,Katz+23) to infer the escaped ionising luminosity of high-z galaxies 
+Implicit Likelihood Inference package trained on mock observations from the SPHINX simulation (Rosdahl+22, Katz+23) to infer the escaped ionising luminosity of high-z galaxies 
 
 ## TODO LIST
 - [x] add example usage for how to load a model
