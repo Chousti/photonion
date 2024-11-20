@@ -9,6 +9,7 @@ Implicit Likelihood Inference package trained on mock observations from the SPHI
 - [ ] think of anything else
 - [ ] Richard: proof read code
 - [ ] Richard: check that the data provided in /models is enough/too much, should we remove the summaries?
+- [ ] Richard: Could you put together some brief instructions for how to train/optimize a model?
 
 ## Example Usage
 Here's an easy example of how to use the package to infer $\dot{N}_{\rm ion}$ from photometry in JADES bands:
