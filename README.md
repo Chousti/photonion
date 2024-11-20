@@ -32,7 +32,7 @@ Which would return:
 \dot{N}_{ion} Prediction for GN-z11: 53.081+0.393-0.460
 ```
 For transparency, we also include all of the code to train ILI models as well as to optimize their hyperparameters. We do not recommend that these are used out of the box, and have therefore not documented them fully.
-If you are interested in using a framework like this to train ILI models to infer physical quantities as trained on SPHINX galaxies, please reach out to nicholas.choustikov@physics.ox.ac.uk and richard.stiskalek@physics.ox.ac.uk. We would be very happy to help and collaborate.
+If you are interested in using a framework like this to train ILI models to infer physical quantities as trained on SPHINX galaxies, please reach out. We would be very happy to help and collaborate.
 ## Citation
 If you use this package for anything cool, a citation of the original paper should be included:
 ````bibtex
