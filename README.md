@@ -1,5 +1,7 @@
 # photonion
-Implicit Likelihood Inference package trained on mock observations from the SPHINX simulation (Rosdahl+22, Katz+23) to infer the escaped ionising luminosity of high-z galaxies 
+Implicit Likelihood Inference package trained on mock observations from the SPHINX simulation ([Rosdahl+22](https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.2386R/abstract); [Katz+23](https://ui.adsabs.harvard.edu/abs/2023OJAp....6E..44K/abstract)) to infer the escaped ionising luminosity of high-z galaxies
+
+Our implementation of ILI is based around the [LTU-ILI package](https://github.com/maho3/ltu-ili/tree/main), described in [Ho+24](https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..54H/abstract)
 
 ## TODO LIST
 - [x] add example usage for how to load a model
@@ -13,7 +15,7 @@ Implicit Likelihood Inference package trained on mock observations from the SPHI
 ## Example Usage
 Here's an easy example of how to use the package to infer $\dot{N}_{\rm ion}$ from photometry in JADES bands:
 ```python
-# Example for GN-z11 (Bunker+23, Tacchella+23):
+# Example for GN-z11 (Bunker+23; Tacchella+23):
 # Raw Data: ["F090W", "F115W", "F150W", "F200W", "F277W", "F335M", "F356W", "F410M", "F444W", "z"], shape: (10, N_galaxy)
 
 import photonion # import packages
@@ -54,5 +56,5 @@ archivePrefix = {arXiv},
 ````
 
 ## Data
-- SPHINX Data Release paper: https://ui.adsabs.harvard.edu/abs/2023OJAp....6E..44K/abstract
-- SPHINX data: https://github.com/HarleyKatz/SPHINX-20-data
+- [SPHINX Data Release paper](https://ui.adsabs.harvard.edu/abs/2023OJAp....6E..44K/abstract)
+- [SPHINX data](https://github.com/HarleyKatz/SPHINX-20-data)
