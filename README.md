@@ -8,7 +8,7 @@ Our implementation of ILI is based around the [LTU-ILI package](https://github.c
 - [x] add example usage for creating a data array (use GN-z11) and computing $\dot{N}_{ion}$
 - [ ] think of anything else
 - [ ] Richard: proof read code
-- [ ] Richard: check that the data provided in /models is enough/too much, should we remove the summaries?
+- [ ] Richard: check that the data provided in /models is enough/too much, should we remove the summaries/fesc models?
 - [ ] Richard: Could you put together some brief instructions for how to train/optimize a model?
 - [ ] Nick: Add note that the model struggles with negative fluxes (as these cannot be converted to AB. Setting the observations to some arbitrarily small value also doesn't work as it boosts the colours to unphysical levels.
 
