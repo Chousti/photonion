@@ -1,5 +1,5 @@
 # PHOTONIOn
-Implicit Likelihood Inference package trained on mock observations from the SPHINX simulation ([Rosdahl+22](https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.2386R/abstract); [Katz+23](https://ui.adsabs.harvard.edu/abs/2023OJAp....6E..44K/abstract)) to infer the escaped ionising luminosity of high-z galaxies
+Implicit Likelihood Inference package trained on mock observations from the SPHINX simulation ([Rosdahl+22](https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.2386R/abstract); [Katz+23](https://ui.adsabs.harvard.edu/abs/2023OJAp....6E..44K/abstract)) to infer the global escaped ionising luminosity of high-z galaxies
 
 While the methodology is described, tested and applied in [Choustikov+24](https://ui.adsabs.harvard.edu/abs/2024arXiv240509720C/abstract), our implementation of ILI is based around the [LTU-ILI package](https://github.com/maho3/ltu-ili/tree/main), described in [Ho+24](https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..54H/abstract).
 
