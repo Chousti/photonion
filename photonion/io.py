@@ -268,9 +268,9 @@ def get_MABs(f090, f115, f150, f200, f277, f356, z, return_muv=False, sphinx=Fal
           M = ab + 5*(1 - np.log10(lum_dist)) + 2.5*np.log10(1+z)
           return M
 
-    MABs = np.zeros((len(z)))
     for i in range(len(z)):
         if sphinx: # Loop over 10 lines of sight for SPHINX galaxies
+            MABs = np.zeros((len(z), 10))
             for j in range(10):
                 # Select correct filter combination for redshift
                 if (z[i] >= 4.5) & (z[i] < 5.25):
@@ -301,8 +301,9 @@ def get_MABs(f090, f115, f150, f200, f277, f356, z, return_muv=False, sphinx=Fal
                 if return_muv:
                     MABs[i,j] = get_muv(MAB, z[i])
                 else:
-                    MABs[i,j] = MAB
+                    MABs[i,j] = MAB #hello
         else:
+            MABs = np.zeros((len(z)))
             # Select correct filter combination for redshift
             if (z[i] >= 4.5) & (z[i] < 5.25):
                 flux = np.array([f090[i], f115[i], f150[i]])
