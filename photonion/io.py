@@ -150,9 +150,9 @@ class SPHINXData:
 
             if muv_norm and not check:
                 y = get_MABs(self._get_directed('F090W_dir'), self._get_directed('F115W_dir'), self._get_directed('F150W_dir'), 
-                                self._get_directed('F200W_dir'), self._get_directed('F277W_dir'), self._get_directed('F356W_dir'), 
-                                self['redshift']
-                                ,sphinx=True)
+                               self._get_directed('F200W_dir'), self._get_directed('F277W_dir'), self._get_directed('F356W_dir'), 
+                               self['redshift']
+                               ,sphinx=True)
                 x = x - y
 
             filter_data[..., i] = x
@@ -268,7 +268,11 @@ def get_MABs(f090, f115, f150, f200, f277, f356, z, return_muv=False, sphinx=Fal
           M = ab + 5*(1 - np.log10(lum_dist)) + 2.5*np.log10(1+z)
           return M
 
-    MABs = np.zeros((len(z)))
+    
+    if sphinx:
+        MABs = np.zeros((len(z), 10))
+    else:
+        MABs = np.zeros((len(z)))
     for i in range(len(z)):
         if sphinx: # Loop over 10 lines of sight for SPHINX galaxies
             for j in range(10):
@@ -282,7 +286,7 @@ def get_MABs(f090, f115, f150, f200, f277, f356, z, return_muv=False, sphinx=Fal
                 elif (z[i] >= 7.25) & (z[i] < 9.75):
                     flux = np.array([f150[i,j], f200[i,j], f277[i,j]])
                     w = np.array([ws[2], ws[3], ws[4]])
-                elif (z[i] >= 9.75) & (z[i] <= 13):
+                elif (z[i] >= 9.75) & (z[i] <= 15):
                     flux = np.array([f200[i,j], f277[i,j], f356[i,j]])
                     w = np.array([ws[3], ws[4], ws[6]])
                 else:
